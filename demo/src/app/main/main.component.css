@@ -1,0 +1,101 @@
+/* Base styles for screens larger than 768px */
+.main-banner {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 250px 120px 150px 120px;
+    position: relative;
+    overflow: hidden;
+}
+
+.main-banner:after {
+    content: '';
+    /* background-image: url("../../assets/Untitled.png"); */
+    background-color: beige;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.main-banner .left-content {
+    margin-right: 15px;
+}
+
+.main-banner .left-content h2 {
+    z-index: 2;
+    position: relative;
+    font-weight: 700;
+    line-height: 70px;
+    font-size: 50px;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.main-banner .left-content .demo-button{
+    z-index: 2;
+    position: relative;
+    font-weight: 700;
+   
+    margin-bottom: 15px;
+
+   
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+    font-family: 'Calibri', sans-serif;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
+    &:hover {
+        background-color: rgba(26, 25, 25, 0.836);
+        color: rgb(245, 245, 245);
+        border-radius: 10px; 
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); 
+      }
+}
+
+
+.main-banner .right-image {
+    text-align: center;
+    position: relative;
+    z-index: 20;
+}
+
+.main-banner .right-image img {
+    max-width: 710px;
+}
+
+
+  
+
+.main-banner .left-content .white-button a {
+    background-color: #D4AF37;
+    color: #fff !important;
+}
+
+/* Responsive styles for screens smaller than 768px */
+@media (max-width: 768px) {
+    .main-banner {
+        padding: 150px 60px 100px 60px;
+    }
+
+    .main-banner .left-content h2 {
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    .main-banner .right-image img {
+        max-width: 100%;
+    }
+}

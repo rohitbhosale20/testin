@@ -1,0 +1,27 @@
+.div.row.mx-5.my-6 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .shadow.col-4 {
+    padding: 150px;
+    margin-left: 100px;
+  }
+  
+  .example-container.justify-content-center {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .material-symbols-outlined {
+    width: 30px;
+  }
+  
+  .form-field {
+    width: 100%;
+  }
+  
+  .btn.btn-primary {
+    background-color: #1f1e1e;
+  }
+  
